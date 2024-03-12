@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Cards</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ebecff;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+            .logo img {
+                width: 40px;
+                height: auto;
+                margin-right: 10px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                font-size: 24px;
+                color: #333;
+            }
+                .logo h1 a {
+                    text-decoration: none;
+                }
+                .logo h1 .cash {
+                    color: #d1162a;
+                }
+
+                .logo h1 .control {
+                    color: #000c9c;
+                }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-left: 20px;
+            }
+
+                nav ul li:first-child {
+                    margin-left: 0;
+                }
+
+                nav ul li a {
+                    text-decoration: none;
+                    color: #333;
+                    font-weight: bold;
+                    padding: 8px 16px;
+                    border-radius: 4px;
+                    transition: color 0.3s ease;
+                }
+
+                nav ul li:nth-child(1):hover a,
+                nav ul li:nth-child(2):hover a,
+                nav ul li:nth-child(3):hover a,
+                nav ul li:nth-child(4):hover a,
+                nav ul li:nth-child(5):hover a {
+                    color: #d1162a;
+                    background-color: #f4f4f4;
+                }
+
+                nav ul li a.login {
+                    background-color: #d1162a;
+                    color: #f4f4f4;
+                    border-radius: 20px;
+                }
+
+                    nav ul li a.login:hover {
+                        color: #f4f4f4;
+                        background-color: #d14d5b;
+                    }
+
+                nav ul li a.signup {
+                    background-color: #000c9c;
+                    color: #f4f4f4;
+                    border-radius: 20px;
+                }
+
+                    nav ul li a.signup:hover {
+                        color: #f4f4f4;
+                        background-color: #373f99;
+                    }
+
+        .credit-cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            flex-direction:column;
+            align-items:center;
+        }
+
+
+
+
+
+        .credit-card1 {
+            width: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            height:180px;
+        }
+
+        .credit-card1 img {
+            float: left;
+            max-width: 150px;
+            height: 150px;
+        }
+
+
+        .credit-card2 {
+            width: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            height: 180px;
+        }
+
+            .credit-card2 img {
+                float: left;
+                max-width: 150px;
+                height: 150px;
+            }
+
+
+        .credit-card3 {
+            width: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            height: 180px;
+        }
+
+            .credit-card3 img {
+                float: left;
+                max-width: 150px;
+                height: 150px;
+            }
+
+
+        .credit-card4 {
+            width: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            height: 180px;
+        }
+
+            .credit-card4 img {
+                float: left;
+                max-width: 160px;
+                height: 150px;
+            }
+
+        .credit-card5 {
+            width: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            height: 180px;
+        }
+
+            .credit-card5 img {
+                float: left;
+                max-width: 150px;
+                height: 150px;
+            }
+
+
+        .credit-card6 {
+            width: 84%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            height: 180px;
+        }
+
+            .credit-card6 img {
+                float: left;
+                max-width: 150px;
+                height: 150px;
+            }
+
+        .credit-card1,
+        .credit-card2,
+        .credit-card3,
+        .credit-card4,
+        .credit-card5,
+        .credit-card6 p {
+            padding-right:80px;
+        }
+
+        .footer {
+            background-color: #f4f4f4;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+            .footer a {
+                color: black;
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="LOGO.png" alt="Company Logo">
+                <h1><a href="index.html"><span class="cash">Cash</span><span class="control">Control</span></a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="howitworks.html">How It Works</a></li>
+                    <li><a href="creditcards.html">Credit Cards</a></li>
+                    <li><a href="#">Loans</a></li>
+                    <li><a href="#">Personal Finance</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="loginpage.html" class="login">Login</a></li>
+                    <li><a href="#" class="signup">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="credit-cards-container">
+
+        <div class="credit-card1">
+            <img src="hdfc.png" alt="Credit1">
+            <h2>HDFC Bank</h2>
+            <p>
+                HDFC Bank offers a wide range of credit cards catering to various needs such as travel, shopping, dining, and more.
+                Their cards come with attractive rewards, cashback offers, and exclusive privileges. With HDFC Bank credit cards, customers can enjoy
+                benefits like complimentary lounge access, fuel surcharge waivers, and milestone rewards.
+                Additionally, HDFC Bank provides excellent customer service and hassle-free online account management.
+            </p>
+        </div>
+
+
+        <div class="credit-card2">
+            <img src="axis.png" alt="Credit2">
+            <h2>Axis Bank</h2>
+            <p>
+                Axis Bank provides credit cards with benefits like cashback, rewards points, travel privileges, and discounts on dining and shopping.
+                They offer a diverse range of cards suitable for different lifestyles and preferences. Axis Bank credit cards come with features such
+                as zero lost card liability, emergency card replacement, and easy EMI options for big-ticket purchases.
+                Customers can also enjoy exclusive discounts and offers on partner merchants.
+            </p>
+        </div>
+
+
+        <div class="credit-card3">
+            <img src="sbi.png" alt="Credit3">
+            <h2>SBI Bank</h2>
+            <p>
+                State Bank of India (SBI) offers credit cards with features such as cashback, rewards, travel benefits, and fuel surcharge waivers.
+                Their cards cater to individuals with varying spending habits and preferences. SBI credit cards provide additional
+                perks such as complimentary insurance coverage, easy payment options, and personalized credit limits.
+                With a wide acceptance network both domestically and internationally, SBI credit cards are a convenient choice for customers.
+            </p>
+        </div>
+
+
+        <div class="credit-card4">
+            <img src="rbl.png" alt="Credit4">
+            <h2>RBL Bank</h2>
+            <p>
+                RBL Bank offers credit cards with innovative features and benefits including rewards, cashback, airport lounge access,
+                concierge services, and discounts on dining and entertainment. RBL Bank credit cards are known for their flexibility and
+                customizable features, allowing customers to tailor their card benefits to suit their lifestyle. With 24/7 customer support and
+                advanced security features, RBL Bank ensures a seamless and secure credit card experience.
+            </p>
+        </div>
+
+
+        <div class="credit-card5">
+            <img src="IndusInd.png" alt="Credit5">
+            <h2>IndusInd Bank</h2>
+            <p>
+                IndusInd Bank provides credit cards with a range of benefits including rewards, cashback, travel privileges,
+                lifestyle benefits, and insurance coverage. Their cards are designed to suit different spending patterns and preferences.
+                IndusInd Bank credit cards offer unique features such as contactless payments, complimentary golf access, and exclusive
+                discounts on luxury brands. Customers also benefit from personalized offers and round-the-clock assistance.
+            </p>
+        </div>
+
+
+        <div class="credit-card6">
+            <img src="stdchart.png" alt="Credit6">
+            <h2>Standard Chartered Bank</h2>
+            <p>
+                Standard Chartered Bank offers credit cards with features like rewards, cashback, travel privileges, discounts on dining
+                and shopping, and exclusive lifestyle benefits. They provide a variety of cards tailored to meet diverse needs and preferences.
+                Standard Chartered credit cards come with innovative features such as contactless payments, global acceptance, and special offers on entertainment events.
+                With convenient online banking services and a dedicated rewards program, Standard Chartered Bank ensures a rewarding credit card experience for its customers.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 CashControl. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a></p>
+    </div>
+
+</body>
+</html>

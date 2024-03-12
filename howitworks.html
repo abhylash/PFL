@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ebecff;
+            padding: 0;
+            background-color;#e8e8e8;
+            
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+            .logo img {
+                width: 40px;
+                height: auto;
+                margin-right: 10px;
+            }
+
+            .logo h1 {
+                margin: 0;
+                font-size: 24px;
+                color: #333;
+                
+            }
+
+                .logo h1 a {
+                    text-decoration: none; 
+                }
+
+
+                .logo h1 .cash {
+                    color: #d1162a;
+                    
+                }
+
+                .logo h1 .control {
+                    color: #000c9c;
+                   
+                }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-left: 20px;
+            }
+
+                nav ul li:first-child {
+                    margin-left: 0;
+                }
+
+                nav ul li a {
+                    text-decoration: none;
+                    color: #333;
+                    font-weight: bold;
+                    padding: 8px 16px;
+                    border-radius: 4px;
+                    transition: color 0.3s ease; 
+                }
+
+                nav ul li:nth-child(1):hover a,
+                nav ul li:nth-child(2):hover a,
+                nav ul li:nth-child(3):hover a,
+                nav ul li:nth-child(4):hover a,
+                nav ul li:nth-child(5):hover a {
+                    color: #d1162a;
+                    background-color: #f4f4f4;
+                }
+
+                nav ul li a.login {
+                    background-color: #d1162a;
+                    color: #f4f4f4;
+                    border-radius: 20px;
+                }
+
+                    nav ul li a.login:hover {
+                        color: #f4f4f4;
+                        background-color: #d14d5b;
+                    }
+
+                nav ul li a.signup {
+                    background-color: #000c9c;
+                    color: #f4f4f4;
+                    border-radius: 20px;
+                }
+
+                    nav ul li a.signup:hover {
+                        color: #f4f4f4;
+                        background-color: #373f99;
+                    }
+
+
+        .bodyy {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+
+        .section {
+            margin-bottom: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            width: 130%;
+            border: 2px solid #333;
+        }
+
+        
+        h1, h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #f4f4f4;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+            .footer a {
+                color: black;
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="LOGO.png" alt="Company Logo">
+                <h1><a href="index.html"><span class="cash">Cash</span><span class="control">Control</span></a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="howitworks.html">How It Works</a></li>
+                    <li><a href="creditcards.html">Credit Cards</a></li>
+                    <li><a href="#">Loans</a></li>
+                    <li><a href="#">Personal Finance</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="loginpage.html" class="login">Login</a></li>
+                    <li><a href="#" class="signup">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="bodyy">
+        <div class="section">
+            <h2>Step 1: Sign Up</h2>
+            <p>Welcome to CashControl! Here's how our platform can help you manage your finances:</p>
+        </div>
+
+        <div class="section">
+            <h2>Step 2: Add Your Income and Expenses</h2>
+            <p>Once you're logged in, start by adding your income sources and recurring expenses.</p>
+        </div>
+
+        <div class="section">
+            <h2>Step 3: Set Up Your Budget</h2>
+            <p>Use our budgeting tools to set spending limits for different categories and track your progress.</p>
+        </div>
+
+        <div class="section">
+            <h2>Step 4: Track Your Spending</h2>
+            <p>Stay on top of your finances by regularly logging your expenses and monitoring your financial health.</p>
+        </div>
+
+        <div class="section">
+            <h2>Step 5: Analyze and Adjust</h2>
+            <p>Review detailed reports and insights to identify areas for improvement and make adjustments to your financial strategy.</p>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; 2024 CashControl. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a></p>
+    </div>
+
+</body>
+</html>
